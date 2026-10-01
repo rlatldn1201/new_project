@@ -1,0 +1,203 @@
+import { Applicant, ClubConfig } from '../types/applicant';
+
+export const INITIAL_CLUB_CONFIG: ClubConfig = {
+  name: '유니스피어 (UNISPHERE)',
+  subTitle: '대학생 연합 IT & 사이드 프로젝트 동아리',
+  generation: '2026학년도 1학기 14기 신입 부원',
+  recruitmentPeriod: '2026.03.01 (일) ~ 2026.03.22 (일) 23:59',
+  meetingSchedule: '매주 토요일 오후 2시 ~ 5시 정기 세션 (신촌/홍대 스터디룸)',
+  tracks: [
+    '기획/PM',
+    'UI/UX 디자인',
+    '프론트엔드 개발',
+    '백엔드 개발',
+    '마케팅/대외협력',
+    '콘텐츠/미디어',
+  ],
+  interviewSlots: [
+    '2026-03-24 (화) 19:00 ~ 21:00 (온라인)',
+    '2026-03-25 (수) 19:00 ~ 21:00 (온라인)',
+    '2026-03-27 (금) 14:00 ~ 17:00 (신촌 대면)',
+    '2026-03-28 (토) 13:00 ~ 18:00 (신촌 대면)',
+  ],
+  contactEmail: 'unisphere.official@gmail.com',
+  contactKakao: 'unisphere_recruit',
+};
+
+export const SAMPLE_APPLICANTS: Applicant[] = [
+  {
+    id: 'APP-2026-001',
+    createdAt: '2026-03-02T14:22:00.000Z',
+    name: '김서연',
+    birthDate: '2004-05-18',
+    gender: '여성',
+    phone: '010-3849-1928',
+    email: 'seoyeon.kim@univ.ac.kr',
+    university: '연세대학교',
+    major: '컴퓨터과학과',
+    studentId: '2023142055',
+    academicYear: '2학년',
+    academicSemester: '1학기',
+    enrollmentStatus: '재학',
+    primaryTrack: '프론트엔드 개발',
+    secondaryTrack: 'UI/UX 디자인',
+    regularMeetingAttending: '가능',
+    interviewSlots: [
+      '2026-03-24 (화) 19:00 ~ 21:00 (온라인)',
+      '2026-03-28 (토) 13:00 ~ 18:00 (신촌 대면)',
+    ],
+    portfolioUrl: 'https://github.com/seoyeon-dev',
+    answers: {
+      motivation:
+        '혼자 토이 프로젝트를 진행하며 프론트엔드 역량을 키워왔지만, 실제 디자이너와 기획자, 백엔드 개발자와 밀접하게 협업하며 실제 유저를 유치하는 완결형 서비스를 런칭해보고 싶어 유니스피어에 지원했습니다. 특히 정기적인 코드 리뷰와 데모데이를 통해 함께 성장하는 개발자가 되고 싶습니다.',
+      collaborativeExperience:
+        '지난 학기 학과 해커톤에서 팀원 간 프레임워크 선정(React vs Vue)과 컴포넌트 설계 방식에 대해 의견 차이가 있었습니다. 각 기술의 러닝 커브와 데드라인을 정량적으로 표로 정리해 팀원들과 블라인드 투표를 거쳐 합의점을 도출했고, 결과적으로 48시간 내에 데모 서비스를 무사히 배포하여 우수상을 수상했습니다.',
+      technicalStrengths:
+        'TypeScript와 React 기반 상태 관리(Zustand), Tailwind CSS를 능숙하게 다루며 웹 접근성과 반응형 UI 구축에 강점이 있습니다. 최근에는 웹 바이탈 최적화와 인터랙티브 애니메이션에 큰 관심을 가지고 지속적으로 학습 중입니다.',
+    },
+    agreePrivacy: true,
+    status: '서류합격',
+    score: 92,
+    adminNotes: 'GitHub 잔디 활발함. 컴포넌트 설계 역량 우수. 면접 시 프로젝트 협업 사례 구체적 질문 요망.',
+  },
+  {
+    id: 'APP-2026-002',
+    createdAt: '2026-03-03T18:45:00.000Z',
+    name: '이도현',
+    birthDate: '2002-11-09',
+    gender: '남성',
+    phone: '010-8271-9482',
+    email: 'dohyun.lee@korea.ac.kr',
+    university: '고려대학교',
+    major: '경영학과',
+    studentId: '2021180324',
+    academicYear: '3학년',
+    academicSemester: '1학기',
+    enrollmentStatus: '재학',
+    primaryTrack: '기획/PM',
+    secondaryTrack: '마케팅/대외협력',
+    regularMeetingAttending: '가능',
+    interviewSlots: [
+      '2026-03-25 (수) 19:00 ~ 21:00 (온라인)',
+      '2026-03-27 (금) 14:00 ~ 17:00 (신촌 대면)',
+    ],
+    portfolioUrl: 'https://notion.so/dohyun-pm-portfolio',
+    answers: {
+      motivation:
+        '캠퍼스 라이프의 페인포인트를 해결하는 IT 프로덕트를 직접 기획하고 런칭하고 싶습니다. 경영학적 관점의 비즈니스 모델링과 데이터 분석 능력을 바탕으로 동아리 팀 프로젝트에서 명확한 제품 로드맵을 제시하고 팀의 방향성을 이끌겠습니다.',
+      collaborativeExperience:
+        '교내 창업 동아리에서 플리마켓 예약 플랫폼 기획 중, 개발 일정이 지연되어 오픈일이 촉박했던 상황이 있었습니다. 핵심 MVP 기능 3가지만 남기고 부가 기능을 과감히 백로그로 전환하는 우선순위 조정을 주도하여 기한 내 성공적으로 론칭했습니다.',
+      technicalStrengths:
+        'Figma 와이어프레임 설계, 유저 저니 맵 작성, SQL을 활용한 유저 로그 데이터 분석에 능숙합니다. Notion과 Jira를 활용한 애자일 스프린트 리딩 경험이 있습니다.',
+    },
+    agreePrivacy: true,
+    status: '면접대기',
+    score: 88,
+    adminNotes: '기획서 로직 깔끔함. 커뮤니케이션 적극적일 것으로 기대됨.',
+  },
+  {
+    id: 'APP-2026-003',
+    createdAt: '2026-03-04T11:15:00.000Z',
+    name: '박민지',
+    birthDate: '2003-08-22',
+    gender: '여성',
+    phone: '010-4721-6539',
+    email: 'minji.park@hongik.ac.kr',
+    university: '홍익대학교',
+    major: '시각디자인과',
+    studentId: '2022130198',
+    academicYear: '3학년',
+    academicSemester: '1학기',
+    enrollmentStatus: '재학',
+    primaryTrack: 'UI/UX 디자인',
+    secondaryTrack: '콘텐츠/미디어',
+    regularMeetingAttending: '가능',
+    interviewSlots: [
+      '2026-03-27 (금) 14:00 ~ 17:00 (신촌 대면)',
+      '2026-03-28 (토) 13:00 ~ 18:00 (신촌 대면)',
+    ],
+    portfolioUrl: 'https://behance.net/minji_design',
+    answers: {
+      motivation:
+        '디자인이 단순히 예쁜 시각물을 넘어 사용자의 행동을 유도하고 실질적인 가치를 창출하는 프로덕트 디자인에 매료되었습니다. 열정적인 개발자들과 실시간으로 소통하며 피그마 디자인 시스템을 구축하고 유저 테스트를 직접 돌려보고 싶습니다.',
+      collaborativeExperience:
+        '비전공 학생들과 팀 프로젝트를 진행할 때 디자인 피드백을 주고받는 과정에서 오해가 생겼던 적이 있습니다. 감정적인 표현 대신 유저 데이터와 피츠의 법칙 등 디자인 원리를 바탕으로 근거를 제시하고 피그마 코멘트로 명확히 소통하여 갈등을 완만히 해결했습니다.',
+      technicalStrengths:
+        'Figma 컴포넌트 및 오토레이아웃, 디자인 토큰 설계, Adobe Illustrator/Photoshop 활용에 능통합니다. 간단한 HTML/CSS 코드를 이해하여 개발자와의 원활한 핸드오프가 가능합니다.',
+    },
+    agreePrivacy: true,
+    status: '최종합격',
+    score: 96,
+    adminNotes: '포트폴리오 비핸스 퀄리티 최상. 디자인 시스템 감각 탁월. 1순위 선발 추천.',
+  },
+  {
+    id: 'APP-2026-004',
+    createdAt: '2026-03-05T09:30:00.000Z',
+    name: '정우진',
+    birthDate: '2001-03-14',
+    gender: '남성',
+    phone: '010-9182-3847',
+    email: 'woojin.jung@snu.ac.kr',
+    university: '서울대학교',
+    major: '전기정보공학부',
+    studentId: '2020140221',
+    academicYear: '4학년',
+    academicSemester: '1학기',
+    enrollmentStatus: '휴학',
+    primaryTrack: '백엔드 개발',
+    secondaryTrack: '기획/PM',
+    regularMeetingAttending: '가능',
+    interviewSlots: [
+      '2026-03-24 (화) 19:00 ~ 21:00 (온라인)',
+      '2026-03-25 (수) 19:00 ~ 21:00 (온라인)',
+    ],
+    portfolioUrl: 'https://velog.io/@woojin_backend',
+    answers: {
+      motivation:
+        '안정적인 대규모 트래픽 분산과 마이크로서비스 아키텍처에 관심이 많은 백엔드 엔지니어 지망생입니다. 다양한 직군의 부원들과 함께 1개 이상의 실제 상용 수준 서비스를 끝까지 구현해 클라우드에 배포하고 운영해보고 싶어 지원했습니다.',
+      collaborativeExperience:
+        '전공 프로젝트에서 DB 스키마 변경 시 발생한 마이그레이션 오류로 API 응답이 깨진 적이 있었습니다. 즉각 슬랙을 통해 프론트엔드 팀원들에게 오류 현황을 공유하고 다운타임 공지를 한 뒤, 롤백 스크립트를 작성하여 30분 내 복구 완료했습니다.',
+      technicalStrengths:
+        'Java/Spring Boot, PostgreSQL, Docker, Redis 캐싱을 통한 성능 튜닝 경험이 있습니다. AWS EC2/S3 배포 파이프라인 구축이 가능합니다.',
+    },
+    agreePrivacy: true,
+    status: '서류검토중',
+    score: 85,
+    adminNotes: '백엔드 기술 스택 탄탄함. 졸업예정/휴학 기간 중 몰입 가능 여부 확인 필요.',
+  },
+  {
+    id: 'APP-2026-005',
+    createdAt: '2026-03-06T16:50:00.000Z',
+    name: '최유나',
+    birthDate: '2005-01-30',
+    gender: '여성',
+    phone: '010-6394-2715',
+    email: 'yuna.choi@hanyang.ac.kr',
+    university: '한양대학교',
+    major: '미디어커뮤니케이션학과',
+    studentId: '2024102941',
+    academicYear: '1학년',
+    academicSemester: '2학기',
+    enrollmentStatus: '재학',
+    primaryTrack: '마케팅/대외협력',
+    secondaryTrack: '콘텐츠/미디어',
+    regularMeetingAttending: '가능',
+    interviewSlots: [
+      '2026-03-27 (금) 14:00 ~ 17:00 (신촌 대면)',
+      '2026-03-28 (토) 13:00 ~ 18:00 (신촌 대면)',
+    ],
+    portfolioUrl: 'https://instagram.com/campus_creator_yuna',
+    answers: {
+      motivation:
+        '좋은 제품이라도 사람들에게 알려지지 않으면 빛을 보지 못한다고 생각합니다. 인스타그램 릴스와 숏폼 콘텐츠를 기획/제작하며 쌓은 바이럴 마케팅 감각으로 유니스피어가 만든 서비스를 대학생 타깃층에 널리 알리고 싶습니다.',
+      collaborativeExperience:
+        '교내 축제 기획단에서 홍보 포스터 톤앤매너를 정할 때 전통적인 방식과 트렌디한 숏폼 방식 간의 의견 충돌이 있었습니다. 두 방식을 A/B 테스트로 스토리에 사전 업로드하여 유저 반응률(클릭률) 데이터를 제시하여 트렌디한 방향으로 팀원들을 설득했습니다.',
+      technicalStrengths:
+        'Premiere Pro, CapCut을 이용한 숏폼 영상 제작, 인스타그램 채널 브랜딩 및 팔로워 5,000명 계정 육성 경험 보유. GA4 기초 데이터 추적 가능.',
+    },
+    agreePrivacy: true,
+    status: '접수완료',
+    score: 80,
+    adminNotes: '숏폼 콘텐츠 감각이 뛰어나 동아리 공식 홍보 및 런칭 마케팅에 적합할 것으로 보임.',
+  },
+];
